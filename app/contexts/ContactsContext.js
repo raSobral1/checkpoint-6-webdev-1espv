@@ -51,7 +51,7 @@ export const ContactsProvider = ({ children }) => {
     );
 
     return (
-        <ContactsContext.Provider value={{ contacts, loading, error }}>
+        <ContactsContext.Provider value={{ contacts, loading, error, getContactById }}>
             {children}
         </ContactsContext.Provider>
     );
