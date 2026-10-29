@@ -29,7 +29,7 @@ export const ContactsProvider = ({ children }) => {
         try {
             setLoading(true);
             setError(null);
-            const response = await contactsApi.get("/usuario");
+            const response = await contactsApi.get("/users");
             setContacts(response.data);
         } catch (err) {
             setError("Falha ao carregar contatos");
